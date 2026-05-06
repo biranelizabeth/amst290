@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Met Gala — Camp &amp; Consumption</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Camp &amp; Consumption</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="met-gala.html" class="active">The Met Gala</a></li>
+      <li><a href="camp.html">What Is Camp?</a></li>
+      <li><a href="analysis.html">Data &amp; Analysis</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="ticker" aria-hidden="true">
+  <span class="ticker-inner">
+    #MetGala2019 ★ Camp: Notes on Fashion ★ May 6, 2019 ★ Metropolitan Museum of Art ★ Costume Institute ★ Anna Wintour ★ Lady Gaga ★ Billy Porter ★ Harry Styles ★ Serena Williams ★ Alessandro Michele ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #MetGala2019 ★ Camp: Notes on Fashion ★ May 6, 2019 ★ Metropolitan Museum of Art ★
+  </span>
+</div>
+
+<!-- ── HERO ─────────────────────────────────────────────────────── -->
+<header class="hero hero-sub" style="background:linear-gradient(140deg,#1a0530 0%,#2a0a4a 50%,#0a1a3a 100%);min-height:55vh;">
+  <div class="halftone"></div>
+  <div style="position:relative;z-index:1;text-align:center;max-width:900px;">
+    <div class="data-label" style="background:var(--raspberry);color:var(--white);">Section 01</div>
+    <h1 style="color:var(--ivory);margin:1rem 0;">
+      <span style="color:var(--orange);">The Met</span><br>
+      <span style="color:var(--pale-pink);">Gala</span>
+    </h1>
+    <p class="lead" style="color:#ccc;max-width:620px;margin:0 auto;">
+      The world's most watched fashion event, and the institutional machinery that translates subcultural aesthetics into mass spectacle.
+    </p>
+  </div>
+</header>
+
+<main>
+
+<!-- ── WHAT IS THE MET GALA ─────────────────────────────────────── -->
+<section class="section">
+  <div class="data-label">Background</div>
+  <h2>The Event and Its Machinery</h2>
+  <div class="divider"></div>
+
+  <div class="grid-2">
+    <div>
+      <p class="lead">The Met Gala — formally the Costume Institute Benefit — is the Metropolitan Museum of Art's annual fundraising gala for its Costume Institute. Held each May on the first Monday, it is widely regarded as the most culturally powerful fashion event in the world, not merely because of who attends, but because of what it <em>broadcasts</em>.</p>
+
+      <p>Founded in 1948 by fashion publicist Eleanor Lambert, the gala was for decades a relatively low-profile industry gathering. Its transformation into a global cultural spectacle accelerated sharply under the leadership of Vogue editor-in-chief Anna Wintour, who took over as chair in 1995. Under Wintour, the guest list became curated to include a precise mixture of fashion, film, music, sports, and technology celebrity — a formula engineered for maximum media impact.</p>
+
+      <p>Crucially, each gala is themed to the Costume Institute's annual exhibition. The theme sets a dress code that celebrities, designers, and brands must interpret on the red carpet. McLean (2023) characterizes the Met Gala as precisely this kind of site: one where high fashion, popular culture, and mass media intersect and collide, producing a cultural statement that none of these registers could generate alone. The theme is the mechanism through which that collision is organized — and broadcast simultaneously to a global audience.</p>
+
+      <div class="pull-quote" style="background:var(--lavender-light);">
+        The Met Gala is not just a party. It is a curated act of cultural production — an institution deciding, for one night a year, what ideas are worth wearing.
+      </div>
+    </div>
+
+    <div>
+      <div class="card card-yellow" style="margin-bottom:1.5rem;">
+        <div class="data-label">Key Facts</div>
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;margin-top:0.5rem;">
+          <tr style="border-bottom:2px solid var(--dark);">
+            <td style="padding:0.6rem 0;font-weight:700;">Founded</td>
+            <td style="padding:0.6rem 0;">1948</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(0,0,0,0.15);">
+            <td style="padding:0.6rem 0;font-weight:700;">Host institution</td>
+            <td style="padding:0.6rem 0;">Metropolitan Museum of Art, New York</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(0,0,0,0.15);">
+            <td style="padding:0.6rem 0;font-weight:700;">Chair</td>
+            <td style="padding:0.6rem 0;">Anna Wintour (since 1995)</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(0,0,0,0.15);">
+            <td style="padding:0.6rem 0;font-weight:700;">Purpose</td>
+            <td style="padding:0.6rem 0;">Annual fundraiser for Costume Institute</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(0,0,0,0.15);">
+            <td style="padding:0.6rem 0;font-weight:700;">Ticket price (2019)</td>
+            <td style="padding:0.6rem 0;">~$35,000 per person</td>
+          </tr>
+          <tr>
+            <td style="padding:0.6rem 0;font-weight:700;">Attendance</td>
+            <td style="padding:0.6rem 0;">~550 guests (2019)</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card card-orange">
+        <div class="data-label">Why the Theme Matters</div>
+        <p>The gala's theme is not merely decorative. Because attendees must interpret and embody the theme on one of the most photographed red carpets in the world, the theme functions as a <strong>public brief</strong> — compelling fashion's most powerful figures to engage with its conceptual content in front of a global audience of hundreds of millions.</p>
+        <p>Past themes have explored religion (<em>Heavenly Bodies</em>, 2018), technology (<em>Manus x Machina</em>, 2016), and Japanese fashion (<em>Japan: Art, Craft, Design</em>, 2024). When the theme is <em>Camp</em>, the stakes for subcultural meaning are uniquely high.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── THE 2019 EDITION ─────────────────────────────────────────── -->
+<section class="section-full band-raspberry" style="padding:5rem 2rem;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div class="data-label" style="background:var(--dark);color:var(--orange);">2019</div>
+    <h2 style="font-size:clamp(2.5rem,7vw,7rem);line-height:0.9;margin-bottom:1.5rem;">
+      Camp:<br>Notes on Fashion
+    </h2>
+
+    <div class="grid-2">
+      <div>
+        <p class="lead">The 2019 Met Gala, held on <strong>May 6, 2019</strong>, was themed "Camp: Notes on Fashion" in direct homage to Susan Sontag's landmark 1964 essay "Notes on Camp." The accompanying exhibition ran from May 9 to September 8, 2019, at the Metropolitan Museum's Costume Institute.</p>
+
+        <p>The exhibition presented approximately 250 objects spanning fashion from the seventeenth century to the present, exploring how camp — defined broadly as artifice, humor, exaggeration, and the love of the unnatural — has manifested in fashion across centuries. Iconic costume designer Bob Mackie and legendary couturier Charles James both featured prominently alongside contemporary designers like Moschino, Versace, and Gucci.</p>
+
+        <p>The gala was co-chaired by <strong>Lady Gaga</strong>, <strong>Harry Styles</strong>, <strong>Serena Williams</strong>, and <strong>Alessandro Michele</strong> (then creative director of Gucci). The co-chairs themselves were carefully chosen: Lady Gaga as a pop maximalist deeply invested in camp aesthetics; Harry Styles as a boundary-crossing style icon; Serena Williams as one of the most powerful athletes in the world; and Michele as the architect of Gucci's own neo-camp aesthetic revival.</p>
+      </div>
+
+      <div>
+        <div class="card card-dark" style="margin-bottom:1.5rem;">
+          <div class="data-label" style="background:var(--orange);">Co-Chairs, 2019</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem;">
+            <div style="text-align:center;padding:1rem;border:2px solid var(--orange);">
+              <div style="font-family:var(--font-display);font-size:3rem;color:var(--raspberry);">LG</div>
+              <div style="font-family:var(--font-display);font-size:1rem;letter-spacing:2px;color:var(--ivory);">Lady Gaga</div>
+              <div style="font-size:0.75rem;color:#aaa;font-style:italic;">Pop artist &amp; camp icon</div>
+            </div>
+            <div style="text-align:center;padding:1rem;border:2px solid var(--lavender);">
+              <div style="font-family:var(--font-display);font-size:3rem;color:var(--lavender);">HS</div>
+              <div style="font-family:var(--font-display);font-size:1rem;letter-spacing:2px;color:var(--ivory);">Harry Styles</div>
+              <div style="font-size:0.75rem;color:#aaa;font-style:italic;">Musician &amp; style icon</div>
+            </div>
+            <div style="text-align:center;padding:1rem;border:2px solid var(--cerulean);">
+              <div style="font-family:var(--font-display);font-size:3rem;color:var(--cerulean);">SW</div>
+              <div style="font-family:var(--font-display);font-size:1rem;letter-spacing:2px;color:var(--ivory);">Serena Williams</div>
+              <div style="font-size:0.75rem;color:#aaa;font-style:italic;">Athlete &amp; cultural figure</div>
+            </div>
+            <div style="text-align:center;padding:1rem;border:2px solid var(--yellow);">
+              <div style="font-family:var(--font-display);font-size:3rem;color:var(--yellow);">AM</div>
+              <div style="font-family:var(--font-display);font-size:1rem;letter-spacing:2px;color:var(--ivory);">Alessandro Michele</div>
+              <div style="font-size:0.75rem;color:#aaa;font-style:italic;">Gucci Creative Director</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-lavender">
+          <div class="data-label">The Costume Institute Exhibition</div>
+          <p><strong>Camp: Notes on Fashion</strong> ran May 9 – Sept 8, 2019. The exhibition presented ~250 objects including haute couture, ready-to-wear, and accessories, exploring camp as a "sensibility" (in Sontag's terminology) across fashion history.</p>
+          <p>Organized around Sontag's 58 "notes," the exhibition traced camp's intersection with queerness, artifice, humor, and fashion's relationship to the unnatural and the theatrical.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CELEBRITY LOOKS ──────────────────────────────────────────── -->
+<section class="section">
+  <div class="data-label">Red Carpet</div>
+  <h2>Notable Looks of the Evening</h2>
+  <div class="divider"></div>
+  <p class="lead" style="max-width:750px;margin-bottom:2.5rem;">The 2019 red carpet produced some of the most discussed looks in Met Gala history. The looks below illustrate the range of camp interpretations, from maximalist theatrical excess to gender-bending understated elegance.</p>
+
+  <div class="grid-4">
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('gaga.avif') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Brandon Maxwell</strong><br>
+          Magenta ballgown → black sequined dress → fishnet corset → pink gown. Four costume changes on the red carpet itself — the ultimate camp meta-performance of excess.
+        </div>
+      </div>
+      <div class="celeb-name">Lady Gaga</div>
+      <div class="celeb-designer">Brandon Maxwell</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('billy-porter.jpeg') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>The Blonds</strong><br>
+          "Sun God": a towering Egyptian-inspired gold ensemble. Porter was carried onto the red carpet by six shirtless men on a litter, delivering the gala's single most theatrical moment.
+        </div>
+      </div>
+      <div class="celeb-name">Billy Porter</div>
+      <div class="celeb-designer">The Blonds</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('katy.jpeg') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Moschino (Jeremy Scott)</strong><br>
+          Chandelier dress — Perry literally wore a working chandelier, complete with lightbulbs. Changed into a cheeseburger ensemble for the after-party. Pure Sontag camp.
+        </div>
+      </div>
+      <div class="celeb-name">Katy Perry</div>
+      <div class="celeb-designer">Moschino / Jeremy Scott</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('cardi.jpeg') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Thom Browne</strong><br>
+          Crimson silk organza gown with an enormous feathered train. The look took years to create and required a team to carry it. Maximalism as devotional act.
+        </div>
+      </div>
+      <div class="celeb-name">Cardi B</div>
+      <div class="celeb-designer">Thom Browne</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('leto.jpeg') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Gucci (Alessandro Michele)</strong><br>
+          Carried his own severed head — a wax replica — as a prop. Wore a matching wax head on his own. Camp as self-conscious, literalized artifice.
+        </div>
+      </div>
+      <div class="celeb-name">Jared Leto</div>
+      <div class="celeb-designer">Gucci</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('ezra-miller.jpeg') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Burberry</strong><br>
+          Wore a geometric makeup look featuring six eyes by artist Lynda Sherwood. The body as canvas — camp's insistence that the self is always a performance.
+        </div>
+      </div>
+      <div class="celeb-name">Ezra Miller</div>
+      <div class="celeb-designer">Burberry</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('zendaya.avif') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Tommy Hilfiger</strong><br>
+          Cinderella blue gown with stylist Law Roach as her Fairy Godmother in electric green, displaying camp as collaborative, theatrical world-building.
+        </div>
+      </div>
+      <div class="celeb-name">Zendaya</div>
+      <div class="celeb-designer">Tommy Hilfiger</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('harry.jpeg') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Gucci (Alessandro Michele)</strong><br>
+          Sheer black blouse with ruffled collar and high-waisted trousers. Camp's understated gender transgression — disruption through restraint rather than maximalism.
+        </div>
+      </div>
+      <div class="celeb-name">Harry Styles</div>
+      <div class="celeb-designer">Gucci</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('kim.avif') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Thierry Mugler</strong><br>
+          The "wet dress": a pale beige corseted silicone creation simulating a dripping wet body. Controversy followed; the look interrogated the boundary between body and garment.
+        </div>
+      </div>
+      <div class="celeb-name">Kim Kardashian</div>
+      <div class="celeb-designer">Thierry Mugler</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('lupita.jpeg') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Versace</strong><br>
+          Black and gold brocade gown with dramatic gold bodice. Regal maximalism — camp's love of the theatrical and the operatic made sartorial.
+        </div>
+      </div>
+      <div class="celeb-name">Lupita Nyong'o</div>
+      <div class="celeb-designer">Versace</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('lizzo.jpeg') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Marc Jacobs</strong><br>
+          Sweeping yellow feathered gown, joyfully excessive, and unapologetically large. An embodiment of camp's insistence that more is always more.
+        </div>
+      </div>
+      <div class="celeb-name">Lizzo</div>
+      <div class="celeb-designer">Marc Jacobs</div>
+    </div>
+
+    <div class="celeb-frame">
+      <div class="celeb-portrait" style="background:url('priyanka.avif') center/cover no-repeat;">
+        <div class="celeb-tag">
+          <strong>Dior</strong><br>
+          White feathered ballgown with matching feathered cape. Romantic maximalism — the feather as camp's signature signifier of theatrical femininity.
+        </div>
+      </div>
+      <div class="celeb-name">Priyanka Chopra</div>
+      <div class="celeb-designer">Dior</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ── MEDIA IMPACT DATA ─────────────────────────────────────────── -->
+<section class="section-full band-dark" style="padding:5rem 2rem;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div class="data-label" style="background:var(--orange);">Data</div>
+    <h2 style="color:var(--ivory);">Media Impact by the Numbers</h2>
+    <div class="divider"></div>
+
+    <div class="grid-2">
+      <div>
+        <p style="color:#ccc;">Launchmetrics, a fashion analytics firm, published a detailed analysis of the 2019 Met Gala's Media Impact Value (MIV®) — a proprietary metric that assigns monetary value to media placements across print, online, and social channels, accounting for platform, placement tier, and reach.</p>
+
+        <p style="color:#ccc;">Their findings illuminate which celebrities generated the most cultural currency, which brands benefited most, and how the event's media footprint was distributed across platforms. The data provides quantitative evidence for what the red carpet's visual spectacle already suggested: that the 2019 Met Gala was not just an event — it was a media mechanism for producing and distributing aesthetic meaning at mass scale.</p>
+
+        <div class="card card-dark" style="border-color:var(--orange);margin-top:1.5rem;">
+          <div class="data-label" style="background:var(--orange);">MIV® Defined</div>
+          <p style="color:#ccc;font-size:0.9rem;">Media Impact Value (MIV®) is Launchmetrics' proprietary benchmark for measuring the impact of all media placements and mentions across the fashion, luxury, and beauty industries. It translates reach and engagement across print, online, and social media into a single comparable monetary figure.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="chart-wrap" style="background:#111;border-color:var(--orange);">
+          <div class="chart-title" style="color:var(--orange);">MIV® by Celebrity</div>
+          <div class="chart-sub" style="color:#888;">Estimated Media Impact Value generated per celebrity at the 2019 Met Gala (Launchmetrics, 2019)</div>
+          <canvas id="mivChart" height="280"></canvas>
+        </div>
+        <p class="footnote" style="color:#666;">Source: Launchmetrics (2019), "Who Dominated The Met Gala 2019: By the Data."</p>
+      </div>
+    </div>
+
+    <div class="grid-4" style="margin-top:3rem;">
+      <div class="stat-box" style="background:var(--orange);border-color:var(--orange);">
+        <span class="stat-number">$9.57M</span>
+        <span class="stat-label">Lady Gaga MIV®</span>
+        <p style="font-size:0.8rem;margin-top:0.5rem;margin-bottom:0;">Highest individual MIV® generated, driven partly by her four live costume changes — a real-time theatrical performance for global media.</p>
+      </div>
+      <div class="stat-box" style="background:#1a1a1a;border-color:var(--lavender);">
+        <span class="stat-number" style="color:var(--lavender);">$71M+</span>
+        <span class="stat-label" style="color:#ccc;">Total Event MIV®</span>
+        <p style="font-size:0.8rem;color:#aaa;margin-top:0.5rem;margin-bottom:0;">Aggregate Media Impact Value generated across all brands present at the 2019 gala, making it the most valuable Met Gala to date at that time.</p>
+      </div>
+      <div class="stat-box" style="background:#1a1a1a;border-color:var(--cerulean);">
+        <span class="stat-number" style="color:var(--cerulean);">Gucci</span>
+        <span class="stat-label" style="color:#ccc;">Top Brand MIV®</span>
+        <p style="font-size:0.8rem;color:#aaa;margin-top:0.5rem;margin-bottom:0;">Gucci's presence through Harry Styles, Jared Leto, and other attendees made it the highest-earning brand of the evening.</p>
+      </div>
+      <div class="stat-box" style="background:#1a1a1a;border-color:var(--raspberry);">
+        <span class="stat-number" style="color:var(--raspberry);">#1</span>
+        <span class="stat-label" style="color:#ccc;">Social Media Share</span>
+        <p style="font-size:0.8rem;color:#aaa;margin-top:0.5rem;margin-bottom:0;">Social media accounted for the largest share of total MIV®, surpassing print and online editorial combined — a first for the event.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SOCIAL MEDIA ECHO ─────────────────────────────────────────── -->
+<section class="section">
+  <div class="data-label">Social Media</div>
+  <h2>The Event as Social Media Engine</h2>
+  <div class="divider"></div>
+
+  <div class="grid-2">
+    <div>
+      <p class="lead">The 2019 Met Gala was the first edition to be live-streamed in full by Vogue, and the first in which social media surpassed print as the primary generator of MIV. This structural shift marks a qualitative change in how the event functions culturally.</p>
+
+      <p>Previous galas were primarily documented <em>after the fact</em> — through editorial spreads in Vogue, fashion week coverage, and retrospective analysis. In 2019, the gala was experienced by millions in real time, with #MetGala2019 trending globally on Twitter within the first hour of arrivals. Instagram Stories, Twitter live-threads, and YouTube reaction content produced a distributed, participatory media event that extended far beyond the event's physical boundaries.</p>
+
+      <p>This simultaneity is crucial: camp aesthetics were not merely reported on — they were <em>experienced</em> in real time by a mass audience, many of whom encountered the concept of camp for the first time through a celebrity's look on a phone screen. The translation from subcultural practice to mass aesthetic began at the moment of broadcast.</p>
+    </div>
+
+    <div>
+      <div style="display:flex;flex-direction:column;gap:1.5rem;">
+
+        <div class="tweet-mock">
+          <div class="tweet-header">
+            <div class="tweet-avatar" style="background:var(--raspberry);">VF</div>
+            <div class="tweet-user">
+              <strong>Vogue Fashion</strong>
+              <span>@VogueFashion</span>
+            </div>
+          </div>
+          <p class="tweet-body">Billy Porter just arrived to the <span class="ht">#MetGala</span> being carried by shirtless men in a litter wearing a FULL SUN GOD ENSEMBLE and we are not okay 🌟 This is <span class="ht">#Camp</span> at its most theatrical and we are HERE for it <span class="ht">#MetGala2019</span></p>
+          <div class="tweet-foot">
+            <span>9:14 PM · May 6, 2019</span>
+            <span><strong>47.2K</strong> Retweets</span>
+            <span><strong>183K</strong> Likes</span>
+          </div>
+        </div>
+
+        <div class="tweet-mock">
+          <div class="tweet-header">
+            <div class="tweet-avatar" style="background:var(--cerulean);">DQ</div>
+            <div class="tweet-user">
+              <strong>DragQueenCulture</strong>
+              <span>@dragqueenculture</span>
+            </div>
+          </div>
+          <p class="tweet-body">Appreciate the <span class="ht">#MetGala2019</span> looks but can we talk about how this is literally just what drag queens have been doing for 60 years? Camp belongs to us. Billy Porter knows it. Not sure everyone else on that carpet does. <span class="ht">#QueerHistory</span> <span class="ht">#Camp</span></p>
+          <div class="tweet-foot">
+            <span>11:02 PM · May 6, 2019</span>
+            <span><strong>31.8K</strong> Retweets</span>
+            <span><strong>129K</strong> Likes</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-heading">Works Cited</div>
+    <ul class="cite-list">
+      <li>Adorno, T. W., & Rabinbach, A. G. (1975). Culture industry reconsidered. <em>New German Critique</em>, (6), 12–19.</li>
+      <li>Blackman, S. (2014). Subculture theory: An historical and contemporary assessment of the concept for understanding deviance. <em>Deviant Behavior, 35</em>(6), 496–512.</li>
+      <li>Dyer, Richard. <em>The Culture of Queers</em>. 1st ed., Routledge, 2002.</li>
+      <li>Greteman, A. J., & Stiegler, S. (2019). The emergence and persistence of queerness: Conversing through visual culture within a generation. <em>Journal of Homosexuality, 66</em>(5), 653–668.</li>
+      <li>Launchmetrics. (2019). <em>Who Dominated The Met Gala 2019: By the Data.</em></li>
+      <li>McLean, Lauren. (2023). The Met Gala: Where high, low, and popular culture collide. <em>Scaffold: Journal of the Institute of Comparative Studies in Literature, Arts and Culture, 1</em>(1), 53–66.</li>
+      <li>Sontag, Susan. "Notes on Camp." <em>Partisan Review</em>, 1964.</li>
+    </ul>
+    <p style="font-size:0.78rem;color:#555;margin-top:2rem;">Digital Humanities Project · Spring 2026 · <a href="index.html" style="color:var(--orange);">← Back to Home</a></p>
+  </div>
+</footer>
+
+<script>
+  // MIV Chart
+  const mivCtx = document.getElementById('mivChart').getContext('2d');
+  new Chart(mivCtx, {
+    type: 'bar',
+    data: {
+      labels: ['Lady Gaga','Billy Porter','Cardi B','Katy Perry','Kim K.','Priyanka C.','Zendaya','Harry Styles'],
+      datasets: [{
+        label: 'MIV® (USD millions)',
+        data: [9.57, 7.2, 5.3, 4.8, 4.2, 3.9, 3.5, 3.1],
+        backgroundColor: [
+          '#D90166','#FFD700','#DC143C','#FF6B35',
+          '#888','#B388FF','#4169E1','#333'
+        ],
+        borderColor: '#0D0D0D',
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` $${ctx.parsed.y}M MIV®`
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: { color: '#aaa', callback: v => '$' + v + 'M' },
+          grid: { color: 'rgba(255,255,255,0.05)' }
+        },
+        x: {
+          ticks: { color: '#ccc', font: { size: 11 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
